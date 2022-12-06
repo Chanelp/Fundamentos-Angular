@@ -24,6 +24,8 @@ import { FormularioComponent } from './components/form/formulario/formulario.com
 import { FormularioAnidadoComponent } from './components/form/formulario-anidado/formulario-anidado.component';
 import { FormularioArrayComponent } from './components/form/formulario-array/formulario-array.component';
 import { FormularioValidadoComponent } from './components/form/formulario-validado/formulario-validado.component';
+import { EjemploPipesComponent } from './components/ejemplo-pipes/ejemplo-pipes.component';
+import { MultiplicaPipe } from './pipes/multiplica.pipe';
 
 @NgModule({
   declarations: [ //Todo lo exportado aquí es visible a nivel de proyecto
@@ -38,7 +40,9 @@ import { FormularioValidadoComponent } from './components/form/formulario-valida
     FormularioComponent,
     FormularioAnidadoComponent,
     FormularioArrayComponent,
-    FormularioValidadoComponent
+    FormularioValidadoComponent,
+    EjemploPipesComponent,
+    MultiplicaPipe
   ],
   imports: [
     BrowserModule,

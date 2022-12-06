@@ -315,23 +315,28 @@
 </div>
 
 <div class="content" role="main">
+  <!-- TODO: Eliminar el Home Page a favor del Router Outlet-->
+  <!--<app-home-page></app-home-page>-->
+
+  <!-- TODO: Router Outlet: Renderiza aquello que le indica el Routing Module a partir de la URL en la que estemos-->
   <!-- <h1>¡Hola, {{ nombre }}!</h1>
 
   <!--Input para trabajar con NgModel-->
   <!--<input type="text" placeholder="Nombre de usuario" [(ngModel)]="usuario" />
   <app-saludo [nombre]="usuario" (mensajeEmitter)="recibirMensajeDelHijo($event)"></app-saludo>
 
+  <!-- * Ejemplo de uso de servicio -->
   <!--<app-lista-contactos></app-lista-contactos>-->
   <!--<app-login-form></app-login-form>-->
 
-  <!-- TODO: Eliminar el Home Page a favor del Router Outlet-->
-  <!--<app-home-page></app-home-page>-->
-
-  <!-- TODO: Router Outlet: Renderiza aquello que le indica el Routing Module a partir de la URL en la que estemos-->
   <!-- <router-outlet></router-outlet> -->
 
+  <!-- * Ejemplo de formularios reactivos -->
   <!-- <app-formulario></app-formulario> -->
   <!-- <app-formulario-anidado></app-formulario-anidado> -->
   <!-- <app-formulario-array></app-formulario-array> -->
-  <app-formulario-validado></app-formulario-validado>
+  <!-- <app-formulario-validado></app-formulario-validado> -->
+
+  <!-- * Ejemplo de Pipes en  -->
+  <app-ejemplo-pipes></app-ejemplo-pipes>
 </div>
