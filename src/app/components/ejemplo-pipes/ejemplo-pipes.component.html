@@ -18,5 +18,10 @@
 <p>Mi cumpleaños con PIPE DATE Short/Full MAYUS es: {{ dob | date: dateFormat | uppercase }}</p>
 <p>Mi cumpleaños con PIPE DATE Short/Full MINUS es: {{ dob | date: dateFormat | lowercase }}</p>
 
-<!-- Pipe personalizado (Multiplica) -->
-<p>Resultado: {{ 3 | multiplica: 5 }}</p>
+<!-- Pipe personalizado (Multiplica)  - Ejs: sacar porcentajes, puntos, iva, itbis-->
+<p>Resultado: {{ 3 | multiplica: 5 }} puntos</p>
+
+
+<!-- Pipe personalizado -->
+<p>{{ jugador1 | calcularPuntuacion }}</p>
+<p>{{ jugador2 | calcularPuntuacion }}</p>

@@ -26,6 +26,7 @@ import { FormularioArrayComponent } from './components/form/formulario-array/for
 import { FormularioValidadoComponent } from './components/form/formulario-validado/formulario-validado.component';
 import { EjemploPipesComponent } from './components/ejemplo-pipes/ejemplo-pipes.component';
 import { MultiplicaPipe } from './pipes/multiplica.pipe';
+import { CalcularPuntuacionPipe } from './pipes/calcular-puntuacion.pipe';
 
 @NgModule({
   declarations: [ //Todo lo exportado aquí es visible a nivel de proyecto
@@ -42,7 +43,8 @@ import { MultiplicaPipe } from './pipes/multiplica.pipe';
     FormularioArrayComponent,
     FormularioValidadoComponent,
     EjemploPipesComponent,
-    MultiplicaPipe
+    MultiplicaPipe,
+    CalcularPuntuacionPipe
   ],
   imports: [
     BrowserModule,
