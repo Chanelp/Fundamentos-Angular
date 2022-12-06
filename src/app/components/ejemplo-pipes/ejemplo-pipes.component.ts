@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IContacto } from 'src/app/models/interfaces/contacto.interface';
 import { IJugador } from 'src/app/models/interfaces/jugador.interface';
 
 @Component({
@@ -10,6 +11,18 @@ export class EjemploPipesComponent implements OnInit {
   dob: Date = new Date(2009, 0, 14);
   cambio: boolean = true;
   nombre: string = 'María';
+  PI: number = 3.14159265359;
+  precioCarrito: number = 100;
+  persona: IContacto = {
+    id: 0,
+    nombre: 'Marcos',
+    apellidos: 'Liberata',
+    edad: 20,
+    email: 'marcos@gmail.com'
+  }
+
+  cantidad:number = 0.3512;
+  textoLargo:string = 'lorem ipsum doiwdhheu rewoiiiid wjqj q'
 
   // Ejemplo para pipe calcular puntuación
   jugador1: IJugador = {

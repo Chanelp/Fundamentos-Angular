@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -12,6 +12,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 //Angular Material
 import {MatFormFieldModule} from '@angular/material/form-field';
 
+//Locale para PIPES
+import { registerLocaleData } from '@angular/common';
+import localeES from '@angular/common/locales/es';
+registerLocaleData(localeES); // Registramos el LOCALE_ID de 'es'
 
 //Módulo personalizado que exporta componentes de tipo lista
 import { ListModule } from './modules/list/list.module';
@@ -58,7 +62,12 @@ import { CalcularPuntuacionPipe } from './pipes/calcular-puntuacion.pipe';
     MatFormFieldModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    // Registramos los locale de ES para que los PIPES salgan en español
+    {
+      provide: LOCALE_ID, useValue: 'es'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
