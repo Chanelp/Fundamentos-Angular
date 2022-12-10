@@ -4,7 +4,7 @@
   <!-- Botones para iniciar animaciones -->
 
   <button mat-raised-button color="warn" (click)="cambiarEstadoActivado()">
-    {{ state == "active" ? "Desactivar" : "Activar" }}
+    {{ state === "active" ? "Desactivar" : "Activar" }}
   </button>
 
   <button mat-raised-button color="primary" (click)="subir()">
@@ -14,6 +14,6 @@
     Rotar caja
   </button>
   <button mat-raised-button color="info" (click)="cambiarTamanio()">
-    {{ state == "original" ? "Ampliar" : "Original" }}
+    {{ state === "original" ? "Ampliar" : "Original" }}
   </button>
 </div>

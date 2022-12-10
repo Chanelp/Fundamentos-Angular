@@ -57,6 +57,7 @@ export class EjemploAnimacionComponent implements OnInit {
     //     this.state = 'active';
     //   }
     // }, 1000)
+    console.log('ngOnInit ejemplo animación');
   }
 
   cambiarEstadoActivado(){
