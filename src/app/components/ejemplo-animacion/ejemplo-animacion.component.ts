@@ -13,7 +13,7 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
         transform: 'translate(10px, 20px)'
       })),
       state('inactive', style({
-        transform: 'translate(40px, 50px)'
+        transform: 'translate(30px, 40px)'
       })),
       transition('inactive => active', animate('1000ms ease-in')),
       transition('active => inactive', animate('1000ms ease-out'))
