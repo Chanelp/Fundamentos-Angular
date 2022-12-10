@@ -18,21 +18,28 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
       state('subir', style({
         transform: 'translateY(15px)'
       })),
-      state('bajar', style({
-        transform: 'translateY(-15px)'
+      state('rotar', style({
+        transform: 'rotate(90deg)'
+      })),
+      state('ampliar', style({
+        transform: 'scale(2, 2)',
+        backgroundColor: 'green'
+      })),
+      state('original', style({
+        transform: 'scale(1, 1)'
       })),
       transition('inactive => active', animate('1000ms ease-in')),
       transition('active => inactive', animate('1000ms ease-out')),
       transition('active => subir', animate('1000ms ease-in')),
       transition('subir => active', animate('1000ms ease-out')),
-      transition('active => bajar', animate('1000ms ease-in')),
-      transition('bajar => active', animate('1000ms ease-out')),
+      transition('active => rotar', animate('1000ms ease-in')),
+      transition('rotar => active', animate('1000ms ease-out')),
       transition('inactive => subir', animate('1000ms ease-in')),
       transition('subir => inactive', animate('1000ms ease-out')),
-      transition('inactive => bajar', animate('1000ms ease-in')),
-      transition('bajar => inactive', animate('1000ms ease-out')),
-      transition('subir => bajar', animate('1000ms ease-in')),
-      transition('bajar => subir', animate('1000ms ease-out'))
+      transition('inactive => rotar', animate('1000ms ease-in')),
+      transition('rotar => inactive', animate('1000ms ease-out')),
+      transition('subir => rotar', animate('1000ms ease-in')),
+      transition('rotar => subir', animate('1000ms ease-out'))
     ])
   ]
 })
@@ -64,8 +71,17 @@ export class EjemploAnimacionComponent implements OnInit {
     this.state = 'subir';
   }
 
-  bajar(){
-    this.state = 'bajar';
+  rotar(){
+    this.state = 'rotar';
   }
+
+  cambiarTamanio(){
+    if(this.state == 'original'){
+      this.state = 'ampliar';
+      } else {
+      this.state = 'original';
+      }
+  }
+
 
 }
