@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 //Angular Material
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
 
 //Locale para PIPES
 import { registerLocaleData } from '@angular/common';
@@ -62,6 +63,7 @@ import { EjemploAnimacionComponent } from './components/ejemplo-animacion/ejempl
     // Importamos el Reactive FormsModule para trabajar con formularios reactivos
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatButtonModule,
     BrowserAnimationsModule
   ],
   providers: [

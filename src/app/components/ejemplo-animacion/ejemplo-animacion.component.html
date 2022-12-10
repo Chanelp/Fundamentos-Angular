@@ -1,3 +1,13 @@
 <div [@animaciones]='state' class="carta">
-    Ejemplo de animaciones
+    <p>Ejemplo de animación - {{ state }} </p>
+
+    <!-- Botones para iniciar animaciones -->
+    
+    <button mat-raised-button color='warn' (click)="cambiarEstadoActivado()">
+        {{ state == 'active' ? 'Desactivar' : 'Activar' }}
+    </button>
+
+    <button mat-raised-button color='primary' (click)="subir()">Subir caja</button>
+    <button mat-raised-button color='secondary' (click)="bajar()">Bajar caja</button>
 </div>
+
